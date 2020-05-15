@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <title>My Portfolio
+        </title>
+        <style>
+            body{
+                margin: 0px;
+                background-color: lightgrey;
+            }
+            header{
+                text-align: center;
+                background-color:darkmagenta;
+                padding: 10px;
+            }
+            header h1{
+                
+                font-size: 50px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            header p{
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: italic;
+            }
+
+            .nav{
+                font-family: arial;
+                font-style: italic;
+                font-size: 12px;
+            }
+
+            .nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color:black;
+			}
+	
+			.nav li {
+				float: left;
+				}
+
+			.nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
+	
+			.nav li a:hover:not(.active) {
+			background-color: #111;
+			}
+
+			.nav .active {
+			background-color:darkmagenta;
+			}
+
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: grey;
+                text-align: center;
+            }
+
+            .body{
+                padding-bottom: 100px;
+                text-align: center;
+            }
+
+            img,video{
+                border:2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>AKMAL GHAZALI</h1>
+            <p>Everything About Me :)</p>
+        </header>
+
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html"> Home </a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="body">
+            <div>
+                <h1>Academic</h1>
+
+                <p> -> Get 4A 1C in UPSR <br>
+                -> Get 5A in PT3 <br>
+                -> Get 6A 2B 1C in SPM <br>
+                -> Get CGPA: 3.3 in Foundation <br>
+                -> Get Dean List (3.53) in Semester 1 Degree</p>
+                
+                <img src="./images/achievement/deanlist.jpg" alt="deanlist" width="300px" height="400px">;
+
+            </div>
+            
+            <div>
+                <h1>Futsal</h1>
+
+                <p>Represent Uitm Kuala Terengganu in Many Tournament</p>
+                <img src="./images/achievement/futsal1.jpg" alt="futsal1" width="400px" height="300px">
+                <img src="./images/achievement/futsal2.jpg" alt="futsal2" width="400px" height="300px">
+                <img src="./images/achievement/futsal3.jpg" alt="fustal3" width="400px" height="300px">
+                <img src="./images/achievement/futsal4.jpg" alt="futsal4" width="400px" height="300px">
+                <br>
+                <br>
+                <p>Runner-Up in Futsal Tournament At Uitm Kuala Terengganu</p>
+                <img src="./images/achievement/runnerupfutsal1.jpg" alt="runnerupfutsal1" width="400px" height="300px">
+                <img src="./images/achievement/runnerupfutsal2.jpg" alt="runnerupfutsal2" width="400px" height="300px">
+                <br>
+                <br>
+                <p><b>Biggest Achievement:</b> Represent Uitm Terengganu In "Kelayakan Liga Institut Pengajian Tinggi"</p>
+                <img src="./images/achievement/ligaipt1.jpg" alt="ligaipt1" width="400px" height="300px">
+                <img src="./images/achievement/ligaipt2.jpg" alt="ligaipt2" width="400px" height="300px">
+            </div>
+
+            <div>
+                <h1>Football</h1>
+
+                <p>Champion in 9vs9 Football Tournament At Uitm Kuala Terengganu</p>
+                <img src="./images/achievement/championfootball.jpg" alt="championfootball" width="400px" height="300px">
+                <video width="400" controls muted>
+                    <source src="./images/achievement/penalty.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                  </video>
+                  <p><i>ps:// I Save The Last Penalty To Bring The Champion</i></p>
+                  <br>
+                  <br>
+                <p>Represent Uitm Kuala Terengganu In Friendly Match With Other Team</p>
+                <img src="./images/achievement/friendlyfootball.jpg" alt="friendlyfootball" width="400px" height="300px">
+            </div>
+
+            <div>
+                <h1>Singing</h1>
+                
+                <p>Get First Place in Singing Competition at Uitm Kuala Terengganu</p>
+                <img src="./images/achievement/singing1.jpg" alt="singing1" width="300px" height="400px">
+                <img src="./images/achievement/singing2.jpg" alt="singing2" width="400px" height="300px">
+                <br><br>
+                <p>Video Of Singing Competition: </p>
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button><br><br>
+                <video id="video1" width="420" controls>
+                    <source src="./images/achievement/singingvideo.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                  </video>
+                <br>
+                <br>
+                <p>Also Can Hear In Audio ;) </p>
+                <audio controls>
+                    <source src="./images/achievement/singingsong.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </div>
+
+            <div>
+                <h1>Curriculum</h1>
+
+                <p> Joined PKBM In Secondary School</p>
+
+                <p> Joined SUKSIS in Degree</p>
+                <img src="./images/achievement/suksis2.jpg" alt="suksis2" width="400px" height="300px">
+                <img src="./images/achievement/suksis3.jpg" alt="suksis3" width="300px" height="400px">
+            </div>
+            
+            
+        </div>
+        <footer>
+            <p>Posted by: Wan Muhammad Akmal Bin Wan Ghazali</p>
+            <p>Contact information: <a href="#">wmuhdakmal07@gmailcom</a></p>
+        </footer>
+
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function playPause() { 
+              if (myVideo.paused) 
+                myVideo.play(); 
+              else 
+                myVideo.pause(); 
+            } 
+            
+            function makeBig() { 
+                myVideo.width = 560; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 320; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 420; 
+            } 
+            </script> 
+        
+        
+
+
+        
+    </body>
+</html>

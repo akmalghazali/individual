@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>My Portfolio
+        </title>
+        <style>
+            body{
+                margin: 0px;
+                background-color: lightgrey;
+            }
+            header{
+                text-align: center;
+                background-color:darkmagenta;
+                padding: 10px;
+            }
+            header h1{
+                
+                font-size: 50px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            header p{
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: italic;
+            }
+
+            .nav{
+                font-family: arial;
+                font-style: italic;
+                font-size: 12px;
+            }
+
+            .nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color:black;
+			}
+	
+			.nav li {
+				float: left;
+				}
+
+			.nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
+	
+			.nav li a:hover:not(.active) {
+			background-color: #111;
+			}
+
+			.nav .active {
+			background-color:darkmagenta;
+			}
+
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: grey;
+                text-align: center;
+            }
+
+            .body{
+                padding-bottom: 100px;
+                text-align: center;
+
+            }
+            table{
+                text-align:center;
+                width: 70%;
+            }
+            td{
+                border:1px dotted black;
+                width:100px;
+            }
+
+            .personal{
+                margin-left:200px;
+                margin-right:200px;
+                background-color: black;
+                color: white;
+                border: 10px solid purple;
+            }
+
+            .personal h1{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>AKMAL GHAZALI</h1>
+            <p>Everything About Me :)</p>
+        </header>
+
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html"> Home </a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="body">
+
+            <h1>Social Media</h1>
+        <table align="center">
+            <tr>
+                <td>
+                    <p>Facebook</p>
+                    <img src="./images/contact/facebook.png" alt="facebook" width="100px" height="80px">
+                    <p><i>Move Fast And Break Things</i></p>
+                    <a href="https://www.facebook.com/wanmuhd.akmal.96/" target="_blank">Click Here</a>
+                    
+                </td>
+                <td>
+                    <p>Whatsapp</p>
+                    <img src="./images/contact/whatsapp.png" alt="whatsapp" width="90px" height="90px">
+                    <p><i>A New Trendy Communication</i></p>
+                    <a href="https://api.whatsapp.com/send?phone=601129223970" target="_blank">Click Here</a>
+                </td>
+                <td>
+                    <p>Instagram</p>
+                    <img src="./images/contact/instagram.png" alt="ig" width="75px" height="75px">
+                    <p><i>Capture and Share The Worlds Moments</i></p>
+                    <a href="https://instagram.com/_mallghazali" target="_blank">Click Here</a>
+                </td>
+                <td>
+                    <p>Twitter</p>
+                    <img src="./images/contact/twitter.png" alt="twitter" width="90px" height="90px">
+                    <p><i>It's What's Happenning</i></p>
+                    <a href="https://twitter.com/akmalghazali_" target="_blank">Click Here</a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <div class="personal"> 
+            <br>
+            <img src="./images/contact/phone.png" alt="phone" width="40px" height="40px">
+            <img src="./images/contact/email.png" alt="email" width="40px" height="40px">
+            
+            <h1>Personal Information Contact</h1>
+            <p><b>Phone Number: </b>01129223970 <br>
+                <b>Email:</b> wmuhdakmal07@gmail.com <br>
+                <b>Emergency Call:</b> <br>
+                <b>Dad: 0129649462</b>  <b>Mom:</b> 0179603779 </p>
+        </div>
+
+        <button onclick="print_current_page()">Print this page</button>
+        
+        </div>
+        <footer>
+            <p>Posted by: Wan Muhammad Akmal Bin Wan Ghazali</p>
+            <p>Contact information: <a href="#">wmuhdakmal07@gmail.com</a></p>
+        </footer>
+        
+        <script >
+
+            function print_current_page()
+            
+            {
+            
+            window.print();
+            
+            }
+            
+    </script>
+
+
+        
+    </body>
+</html>

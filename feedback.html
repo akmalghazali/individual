@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <title>My Portfolio
+        </title>
+        <style>
+            body{
+                margin: 0px;
+                background-color: lightgrey;
+            }
+            header{
+                text-align: center;
+                background-color:darkmagenta;
+                padding: 10px;
+            }
+            header h1{
+                
+                font-size: 50px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            header p{
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: italic;
+            }
+
+            .nav{
+                font-family: arial;
+                font-style: italic;
+                font-size: 12px;
+            }
+
+            .nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color:black;
+			}
+	
+			.nav li {
+				float: left;
+				}
+
+			.nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
+	
+			.nav li a:hover:not(.active) {
+			background-color: #111;
+			}
+
+			.nav .active {
+			background-color:darkmagenta;
+			}
+
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: grey;
+                text-align: center;
+            }
+
+            .body{
+                padding-bottom: 100px;
+            }
+            
+            .feedback{
+				text-align: center;
+				border: 15px solid black;
+				background-color: coral;
+				margin:2% 10%;
+			
+			}
+			
+			textarea {
+			margin-top: 20px;
+			width: 60%;
+			height: 150px;
+			padding: 20px 20px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f4f4f4;
+			font-size: 12px;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			outline: none;
+			resize: none;
+			}
+			textarea:focus{
+			border: 3px solid #555;
+			}
+			input[type=text] {
+			width: 60%;
+			padding: 5px 20px;
+			margin: 5px 0;
+			box-sizing: border-box;
+			border: 3px solid #ccc;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			outline: none;
+			}
+
+			input[type=text]:focus {
+			border: 3px solid #555;
+			}
+			
+			input[type=email] {
+			width: 60%;
+			padding: 5px 20px;
+			margin: 5px 0;
+			box-sizing: border-box;
+			border: 3px solid #ccc;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			outline: none;
+			}
+
+			input[type=email]:focus {
+			border: 3px solid #555;
+			}
+			
+			input[type=submit] {
+			background-color: red;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+
+			input[type=submit]:hover {
+			color: black;
+			background-color: white;
+			}
+			
+			input[type=reset] {
+			background-color: red;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+
+			input[type=rest]:hover {
+			color: black;
+			background-color: white;
+			}
+        </style>
+
+    
+    </head>
+
+    <body>
+        <header>
+            <h1>AKMAL GHAZALI</h1>
+            <p>Everything About Me :)</p>
+        </header>
+
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html"> Home </a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                
+            </ul>
+        </div>
+        <div class="body">
+        <div class="feedback">
+            <h4>Enter Your Feedback Below<h4>
+            
+            <form name="myForm" action="success.html" onsubmit="return validateForm()" method="post">
+                <label for="name">Name: </label> 
+                <input type="text" name="name"  placeholder="Enter Full Name"><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="Enter Email"><br>
+                <label for="phoneno">Phone Number :</label>
+                <input type="text" name="phoneno" placeholder="Enter Phone Number"><br>
+                <label for="gender">Gender:<br></label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <label for="comment">Comment:</label>
+                <textarea name="comment"> </textarea><br><br>
+                
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+            </div>
+            </div>
+        <footer>
+            <p>Posted by: Wan Muhammad Akmal Bin Wan Ghazali</p>
+            <p>Contact information: <a href="#">wmuhdakmal07@gmail.com</a></p>
+        </footer>
+
+        <script>
+    
+            function validateForm() {
+                var a = document.forms["myForm"]["name"].value;
+                if (a == "" ||a==null) {
+                    alert("Name must be filled out");
+                    return false;
+                     }
+
+                var b = document.forms["myForm"]["email"].value;
+                if (b == "" ||b==null) {
+                    alert("Email must be filled out");
+                    return false;
+                     }
+                var c = document.forms["myForm"]["phoneno"].value;
+                if (c == "" ||c==null) {
+                    alert("Phone Number must be filled out");
+                    return false;
+                     }
+                     
+                var d = document.forms["myForm"]["gender"].value;
+                if (d == "" ||d==null) {
+                    alert("Gender must be filled out");
+                    return false;
+                     }
+                var e = document.forms["myForm"]["comment"].value;
+                if (e == "" ||e==null) {
+                    alert("Comment must be filled out");
+                    return false;
+                     }
+                    
+                }
+            </script>
+        
+        
+
+
+        
+    </body>
+</html>
